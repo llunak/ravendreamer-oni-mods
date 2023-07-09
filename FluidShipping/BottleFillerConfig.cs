@@ -65,7 +65,7 @@ namespace StormShark.OniFluidShipping
 			defaultStorage.storageFilters = STORAGEFILTERS.LIQUIDS;
 			defaultStorage.capacityKg = BuildingGenerationPatches.Options.BottleFillerVolume;
 			defaultStorage.allowItemRemoval = false;
-			defaultStorage.SetDefaultStoredItemModifiers(Storage.StandardInsulatedStorage);
+			defaultStorage.SetDefaultStoredItemModifiers(Storage.StandardSealedStorage);
 
 			go.AddOrGet<DropAllWorkable>();
 			LiquidBottler liquidBottler = go.AddOrGet<LiquidBottler>();
